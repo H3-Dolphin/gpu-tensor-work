@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{19812369-9f02-4723-85d3-930ac6ad0b8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\bf">
+      <UniqueIdentifier>{40c6fd0e-7d0c-4bce-abd1-31e354b37831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\gf">
+      <UniqueIdentifier>{fe0e7311-b2b5-4b89-a8f8-6736f801d0bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{01e18eb9-cb1c-4214-a606-0ebbb3e6eb3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\bf">
+      <UniqueIdentifier>{47c8c8ad-417d-4aa3-b993-6ace13c78d11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gf">
+      <UniqueIdentifier>{ee1b3683-6499-43cc-850f-d6f6027d4dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gf\cpu">
+      <UniqueIdentifier>{74b16d00-14ca-43ec-b1ec-8a71d3c1a2e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\gf\gpu">
+      <UniqueIdentifier>{927802c0-4a0b-40d7-91c1-49cc0f17b18a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\gf\gpu">
+      <UniqueIdentifier>{cdc7b738-b2e2-4906-ab12-9aadc4df526c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\utils">
+      <UniqueIdentifier>{9328cad5-94b6-42a9-a8d3-745820b0aa82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\utils\tcu">
+      <UniqueIdentifier>{e8747d88-0961-4331-a0d7-b57498fa2f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\tcu">
+      <UniqueIdentifier>{d8a921dc-35f8-42d5-ab85-47dd2b7f9190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\utils">
+      <UniqueIdentifier>{030d45bb-6232-4855-be3f-33f7e834263b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BilateralCuda_naive.cuh">
+      <Filter>ヘッダー ファイル\bf</Filter>
+    </ClInclude>
+    <ClInclude Include="bilateralFilter_simd.hpp">
+      <Filter>ヘッダー ファイル\bf</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp">
+      <Filter>ヘッダー ファイル\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="RedefineGaussianDevTCU.cuh">
+      <Filter>ヘッダー ファイル\gf\gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="FragmentFunctions.cuh">
+      <Filter>ヘッダー ファイル\tcu</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_utils.hpp">
+      <Filter>ヘッダー ファイル\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="matMul.cuh">
+      <Filter>ヘッダー ファイル\tcu</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussianCPU.hpp">
+      <Filter>ヘッダー ファイル\gf</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussianCuda.cuh">
+      <Filter>ヘッダー ファイル\gf</Filter>
+    </ClInclude>
+    <ClInclude Include="tensor_sample.h">
+      <Filter>ヘッダー ファイル\tcu</Filter>
+    </ClInclude>
+    <ClInclude Include="RealtimeO1CPU.hpp">
+      <Filter>ヘッダー ファイル\bf</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bilateralFilter_simd.cpp">
+      <Filter>ソース ファイル\bf</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>ソース ファイル\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="RedefineGaussianHost.cpp">
+      <Filter>ソース ファイル\gf\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="NaiveGaussian.cpp">
+      <Filter>ソース ファイル\gf\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="Pattern2GaussianHost.cpp">
+      <Filter>ソース ファイル\gf\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="RealtimeO1Scala.cpp">
+      <Filter>ソース ファイル\bf</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="BilateralCuda_naive.cu">
+      <Filter>ソース ファイル\bf</Filter>
+    </CudaCompile>
+    <CudaCompile Include="RedefineGaussianDevTCU.cu">
+      <Filter>ソース ファイル\gf\gpu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="RedefineGaussianDev.cu">
+      <Filter>ソース ファイル\gf\gpu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="NaiveGaussianCuda.cu">
+      <Filter>ソース ファイル\gf\gpu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="matMul.cu">
+      <Filter>ソース ファイル\utils\tcu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="tensor_sample.cpp">
+      <Filter>ソース ファイル\utils\tcu</Filter>
+    </CudaCompile>
+    <CudaCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
